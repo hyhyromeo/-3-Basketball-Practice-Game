@@ -1,0 +1,42 @@
+.nav-btn {
+  margin: 5px;
+  font-size: medium;
+  padding: 7px;
+  font-family: Poppins-Regular;
+}
+
+.btn {
+  padding: 0.5rem 0.2rem;
+}
+
+#profile {
+  padding: 7px;
+}
+
+#home:hover {
+  color: black;
+}
+
+#profile:hover {
+  color: black;
+}
+
+#ranking:hover {
+  color: black;
+}
+
+#dailyMission:hover {
+  color: black;
+}
+
+#home {
+  padding: 7px;
+}
+
+#ranking {
+  padding: 7px;
+}
+
+#dailyMission {
+  padding: 7px;
+}

@@ -1,0 +1,127 @@
+@charset "utf-8";
+@font-face {
+  font-family: RussoOne;
+  src: url(../fonts/RussoOne-Regular.ttf);
+}
+
+/* CSS Document */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+h3 {
+  font-family: RussoOne;
+  margin-top: 30px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 350px;
+  height: 610px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.model {
+  height: 435px;
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: -25px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+.details p {
+  font-family: RussoOne;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.referContent {
+  margin: 60px;
+  margin-top: 50px;
+}
+
+.logo {
+  height: 60px;
+}
+.box:hover {
+  background-color: rgba(128, 128, 128, 0.3);
+  transform-style: preserve-3d;
+  transform: scale(1.02);
+  transition: all ease 0.3s;
+}
+.box:hover {
+  transition: all ease 0.5s;
+}
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 992px) {
+  .wrap-login100 {
+    padding: 177px 90px 33px 85px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .navbar {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  } */
+  .form-inline {
+    justify-content: center;
+  }
+  .gutters-sm {
+    display: grid;
+  }
+  .wrap-login100 {
+    padding: 100px 80px 33px 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap-login100 {
+    padding: 50px 0px 35px 0px;
+  }
+
+  .container {
+    padding: 0;
+  }
+}
+
+.form-inline {
+  justify-content: center;
+}
+
+/*------------------------------------------------------------------

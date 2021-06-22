@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quickness</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="./images/icons/basketball.ico" />
+    <!--===============================================================================================-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>touchGame</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <meta name="darkreader" content="11a5ce3027b52b5d96c04373939df843" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script
+      src="https://unpkg.com/ml5@latest/dist/ml5.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!---- font-awesone  ---->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./vendor/animate/animate.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./vendor/css-hamburgers/hamburgers.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./vendor/select2/select2.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./css/util.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <!--===============================================================================================-->
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:700,900"
+      rel="stylesheet"
+    />
+    <!--===============================================================================================-->
+    <!-- Font Awesome Icon -->
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+    <!--===============================================================================================-->
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/404style.css" />
+    <link type="text/css" rel="stylesheet" href="css/navbar.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <link rel="icon" type="image/png" href="./images/icons/basketball.ico" />
+    <link rel="stylesheet" href="./css/quickness.css" />
+  </head>
+
+  <body>
+    <i class="fas fa-arrow-left" id="back"></i>
+
+    <div class="wrap">
+      <div class="container">
+        <div class="row">
+          <div class="pad col-sm-3">
+            <div class="gameName">Quickness Practice</div>
+            <p id="status"></p>
+            <div class="rules">Game rules:</div>
+            <br>
+            <p>
+              Step 1: <br />Show completely on camera from head to toes
+            </p>
+            <br />
+            <p>
+              Step 2: <br />Step behind for ready position
+            </p>
+            <br />
+            <p>
+              Step 3: <br />Use your <b>WRIST</b> to touch the start button to start
+              the game
+            </p>
+            <br />
+            <p>
+              Step 4: <br />Please use the <b>WRIST</b> to touch cone
+            </p>
+          </div>
+
+          <div id="canvastouch" class="col-sm-8"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/quickness.js"></script>
+  </body>
+</html>

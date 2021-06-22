@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rank</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--===============================================================================================-->
+  <link rel="icon" type="image/png" href="./images/icons/basketball.ico" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="./vendor/bootstrap/css/bootstrap.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="./vendor/animate/animate.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="./vendor/css-hamburgers/hamburgers.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="./vendor/select2/select2.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="./css/util.css" />
+  <link rel="stylesheet" type="text/css" href="./css/ranking.css" />
+  <link rel="stylesheet" type="text/css" href="./css/profile.css" />
+
+  <!--===============================================================================================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+    integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
+    crossorigin="anonymous" />
+  <link type="text/css" rel="stylesheet" href="css/navbar.css" />
+</head>
+
+<body>
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100">
+        <header></header>
+        <div class="l-wrapper">
+          <div class="l-grid">
+            <div class="l-grid__item l-grid__item--sticky">
+              <div class="c-card u-bg--light-gradient u-text--dark">
+                <div class="c-card__body">
+                  <div class="u-display--flex u-justify--space-between">
+                    <div class="u-text--left">
+                      <div class="u-text--small">Rank</div>
+                      <h2>1st Place</h2>
+                    </div>
+                    <div class="u-text--right">
+                      <div class="u-text--small">Score</div>
+                      <h2 id="winnerScore"></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-card">
+                <div class="c-card__body">
+                  <div class="u-text--center" id="winner"></div>
+                </div>
+              </div>
+            </div>
+            <div class="l-grid__item">
+              <div class="c-card">
+                <div class="c-card__header">
+                  <select class="form-control" aria-label="ranking" id="rankSelect">
+                    <option value="reaction">Reaction</option>
+                    <option value="quickness">Quickness</option>
+                    <option value="squat">Squat</option>
+                  </select><br>
+                  <select class="c-select">
+                    <option selected="selected">
+                      Thursday, May. 13 - Wednesday, May. 19
+                    </option>
+                    <option>
+                      Thursday, May. 20 - Wednesday, May. 26
+                    </option>
+                  </select>
+                </div>
+                <div class="c-card__body">
+                  <ul class="c-list" id="list">
+                    <li class="c-list__item">
+                      <div class="c-list__grid">
+                        <div class="u-text--left u-text--small u-text--medium">
+                          Rank
+                        </div>
+                        <div class="u-text--left u-text--small u-text--medium">
+                          Name
+                        </div>
+                        <div class="u-text--right u-text--small u-text--medium">
+                          Points
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--===============================================================================================-->
+  <script src="./js/navbar.js"></script>
+  <!--===============================================================================================-->
+
+  <!--===============================================================================================-->
+  <script src="./vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="./vendor/bootstrap/js/popper.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="./vendor/select2/select2.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="./vendor/tilt/tilt.jquery.min.js"></script>
+  <script>
+    $(".js-tilt").tilt({
+      scale: 1.1,
+    });
+  </script>
+  <!--===============================================================================================-->
+  <script src="./js/main.js"></script>
+  <script src="./js/ranking.js"></script>
+</body>
+
+</html>

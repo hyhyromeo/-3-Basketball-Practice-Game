@@ -1,0 +1,101 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    max-width: 90vh;
+    max-height: 90vh;
+    background-image: url("../images//index-background.jpg");
+}
+
+.p5Canvas {
+    max-width: 80vw;
+    max-height: 80vh;
+    padding: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.greyWrap {
+    width: 90vw;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    max-width: 90vw;
+    max-height: 90vh;
+    padding: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.loading {
+    width: 75vw;
+    background: rgba(255, 255, 255, 0.8);
+    max-width: 75vw;
+    max-height: 75vh;
+    padding: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.fas {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    padding: 15px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 45%;
+    left: 0;
+}
+
+.fas:hover {
+    background-color: #ac2d4a;
+    color: white;
+}
+
+.typing-demo {
+    position: relative;
+    top: 50%;
+    width: 22ch;
+    animation: typing 2s steps(30), blink 5.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    max-width: 50vw;
+    max-height: 50vh;
+    padding: 0;
+    margin: auto;
+    display: block;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

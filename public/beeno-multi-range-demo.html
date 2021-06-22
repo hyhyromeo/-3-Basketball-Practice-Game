@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas></canvas>
+    <div id="status"></div>
+    <div id="direction"></div>
+    <div id="counter"></div>
+    <script>
+      let canvas = document.querySelector('canvas')
+      let status = document.querySelector('#status')
+      let counter = document.querySelector('#counter')
+      let direction = document.querySelector('#direction')
+      let context = canvas.getContext('2d')
+      let W = 500
+      let H = 500
+      canvas.width = W
+      canvas.height = H
+
+      let count = 0
+
+      let radius = 25
+      let ball1 = { x: 50, y: 50, color: 'red' }
+      let ball2 = { x: 150, y: 150, color: 'green' }
+
+      function render() {
+        context.clearRect(0, 0, W, H)
+
+        drawBall(ball1)
+        drawBall(ball2)
+      }
+      function drawBall(ball) {
+        context.fillStyle = ball.color
+        context.beginPath()
+        context.ellipse(ball.x, ball.y, radius, radius, 0, 0, Math.PI * 2)
+        context.fill()
+      }
+      requestAnimationFrame(render)
+
+      let lastBall1 = ball1
+      let lastDir = ''
+      canvas.onmousemove = event => {
+        lastBall1 = {
+          x: ball1.x,
+          y: ball1.y,
+        }
+        let rect = canvas.getBoundingClientRect()
+        render()
+
+        ball1.x = event.clientX - rect.x
+        ball1.y = event.clientY - rect.y
+
+        let dx = Math.abs(ball1.x - lastBall1.x)
+        let dy = Math.abs(ball1.y - lastBall1.y)
+        if (dx < 5 && dy > 10) {
+          status.textContent = 'clapping'
+        } else {
+          status.textContent = 'idle'
+        }
+
+        let dir = ball1.y - lastBall1.y > 0 ? 'down' : 'up'
+        direction.textContent = dir
+        if (lastDir === 'up' && dir === 'down') {
+          count++
+          counter.textContent = count
+        }
+        lastDir = dir
+      }
+    </script>
+  </body>
+</html>
